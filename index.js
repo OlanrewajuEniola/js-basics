@@ -1,14 +1,7 @@
-//Variable
+//Primitve Types - Title
 
-let name = 'Ola';
-console.log(name);
-
-let firstName = 'Ola';
-let lastName = 'Eniola';
-
-//Constants
-
-let interestRate = 0.3;
-interestRate = 1;
-console.log(interestRate);
-
+let name = 'Ola'; //String lateral
+let age = 48; //Number lateral
+letApproved = false; //Boolean lateral
+let firstName = undefined; //Undefined
+letselectColor = null; //null
