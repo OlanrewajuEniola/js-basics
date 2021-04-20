@@ -1,21 +1,7 @@
-// Objects
+// Arrays
 
-let name = 'Ola';
-let age = 48;
+let selectedColors = ['Red', 'Blue'];
 
-// We can write this way to make our code cleaner
-let person = {
-    name: 'Ola',
-    age: 48
-};
+selectedColors[2] = 'green';
 
-// Dot notation
-person.name = 'Ruth';
-
-//Bracket notation
-person['name'] = 'Mary';
-
-let selection = 'name';
-person[selection] = 'Mary';
-
-console.log(person.name);
+console.log(selectedColors.length);
