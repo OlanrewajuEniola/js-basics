@@ -1,7 +1,7 @@
-//Primitve Types - Title
+//Dynamic Typing
 
-let name = 'Ola'; //String lateral
-let age = 48; //Number lateral
-letApproved = false; //Boolean lateral
-let firstName = undefined; //Undefined
-letselectColor = null; //null
+let name = 'Ola';
+let age = 48;
+let isApproved = false;
+let firstName = undefined;
+let selectColor = null;
