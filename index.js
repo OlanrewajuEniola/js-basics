@@ -1,4 +1,4 @@
-// Functions
+// Functions for performing a task
 
 function greet() {
     console.log('Hello World');
@@ -22,3 +22,11 @@ function greet(name, lastName){
 }
 
 greet('Olanrewaju', 'Eniola');
+
+// Calculating a value
+
+function square(number){
+    return number * number;
+}
+
+console.log(square(3));
