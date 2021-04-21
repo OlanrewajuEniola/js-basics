@@ -1,7 +1,24 @@
-// Arrays
+// Functions
 
-let selectedColors = ['Red', 'Blue'];
+function greet() {
+    console.log('Hello World');
+}
 
-selectedColors[2] = 'green';
+greet();
 
-console.log(selectedColors.length);
+//Another One
+
+function greet(name){
+    console.log('Hello ' + name);
+}
+
+greet('Olanrewaju');
+
+
+//And another one
+
+function greet(name, lastName){
+    console.log('Hello ' + name + ' ' + lastName);
+}
+
+greet('Olanrewaju', 'Eniola');
