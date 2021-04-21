@@ -1,32 +1,20 @@
-// Functions for performing a task
+// Operators
 
-function greet() {
-    console.log('Hello World');
-}
+let x = 4;
+let y = 10;
 
-greet();
+console.log(x);
+console.log(y);
 
-//Another One
+console.log(x + y);
+console.log(x - y);
+console.log(x * y);
 
-function greet(name){
-    console.log('Hello ' + name);
-}
+//Increment
 
-greet('Olanrewaju');
+console.log(++x);
 
+//Decrement
 
-//And another one
-
-function greet(name, lastName){
-    console.log('Hello ' + name + ' ' + lastName);
-}
-
-greet('Olanrewaju', 'Eniola');
-
-// Calculating a value
-
-function square(number){
-    return number * number;
-}
-
-console.log(square(3));
+console.log(y--);
+console.log(y--);
