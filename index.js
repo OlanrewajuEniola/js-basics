@@ -1,20 +1,13 @@
-// Operators
+// Assignment Operators
 
-let x = 4;
-let y = 10;
+let x = 10;
 
-console.log(x);
-console.log(y);
+x++;
+x = x + 1;
 
-console.log(x + y);
-console.log(x - y);
-console.log(x * y);
+x = x + 5;
+x += 5;
 
-//Increment
+x = x * 3;
+x *= 3;
 
-console.log(++x);
-
-//Decrement
-
-console.log(y--);
-console.log(y--);
