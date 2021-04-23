@@ -1,12 +1,16 @@
-// Equality Operators
+// Tenary Operators
 
-//Strict operator
-console.log(1 === 1);
-console.log('1' === 1);
+//If a customer has more than 100 points
+//he is a 'gold' customer, otherwise
+//he is a 'silver' customer.
 
-//Loose operator
-console.log(1 == 1);
-console.log('1' == 1);
+let points = 90;
+
+let type = points > 100 ? 'Gold' : 'Silver';
+
+console.log(type);
+
+
 
 
 
