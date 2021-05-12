@@ -1,8 +1,5 @@
-let userColor = 'Red';
-let defaultColor = 'Blue';
-let currentColor = userColor || defaultColor;
+//BitWise Operators
 
-console.log(currentColor);
 
 
 

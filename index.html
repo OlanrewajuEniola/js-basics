@@ -5,9 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .boxes{
+            border: 3px solid grey;
+            position: relative;
+            height: 200vh;
+        }
+
+        .box{
+            width: 5rem;
+            height: 5rem;
+        }
+
+        .box-one{
+            background-color: aqua;
+            z-index: -5;
+        }
+
+        .box-two{
+            background-color: green;
+            position: fixed;
+            top:0;
+            width: auto;
+            left: 2rem;
+            right: 2rem;
+        }
+
+        .box-three{
+            background-color: gold;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello World. Testing the commit. Complete!. </h1>
-    <script src="index.js"></script>
+    <div class="boxes">
+        <div class="box box-one"></div>
+        <div class="box box-two"></div>
+        <div class="box box-three"></div>
+    </div>
 </body>
 </html>
