@@ -6,44 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .boxes{
-            border: 3px solid grey;
-            position: relative;
-            height: 200vh;
+        .container{
+            display: grid;
+            grid-template: repeat(4, 100px) / repeat(3, 100px);
+            border: 3px solid lightgrey;
+            height: 100vh;
+            color: white;
         }
 
-        .box{
-            width: 5rem;
-            height: 5rem;
-        }
+       .box-one{
+           background: aqua;
+           grid-column: 1 / span 2;
+       }
 
-        .box-one{
-            background-color: aqua;
-            z-index: -5;
-        }
+       .box-two{
+           background: blueviolet;
+           grid-column: 3 / 4;
+           grid-row: 1 / span 2;
+       }
 
-        .box-two{
-            background-color: green;
-            position: fixed;
-            top:0;
-            width: auto;
-            left: 2rem;
-            right: 2rem;
-        }
+       .box-three{
+           background: burlywood;
+           grid-column: 1 / span 2;
+           grid-row: 2;
+       }
 
-        .box-three{
-            background-color: gold;
-            position: absolute;
-            bottom: 0;
-            right: 0;
-        }
+       .box-four{
+           background: chartreuse;
+           grid-column: 1 / span 3;
+       }
+
+       .box-five{
+           background: crimson;
+           grid-column: 1 / span 2;
+       }
+
+       .box-six{
+           background: darkblue;
+       }
+
     </style>
 </head>
 <body>
-    <div class="boxes">
-        <div class="box box-one"></div>
-        <div class="box box-two"></div>
-        <div class="box box-three"></div>
-    </div>
+ <div class="container">
+     <div class="box box-one">A</div>
+     <div class="box box-two">B</div>
+     <div class="box box-three">C</div>
+     <div class="box box-four">D</div>
+     <div class="box box-five">E</div>
+     <div class="box box-six">F</div>
+ </div>  
 </body>
 </html>
