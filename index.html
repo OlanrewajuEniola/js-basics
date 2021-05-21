@@ -6,42 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .container{
+        .navigation{
+            background: black;
+            color: white;
             display: flex;
             flex-direction: column;
+            list-style: none;
+            text-align: center;
         }
-       .box{
-           background: gold;
-       }
 
-       .box:nth-of-type(2){
-           background: blue;
-       }
+        .navigation:hover{
+            color: wheat;
+        }
 
-       @media screen and (min-width: 600px){
-           .container{
-               flex-direction: row;
-           }
-           
-       }
-
+        @media screen and (min-width:768px) {
+        .navigation{
+            flex-direction: row;
+            justify-content: flex-end;
+            padding-right:1rem;
+        }   
+        }
     </style>
 </head>
 <body>
- <div class="container">
-    <div class="box">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-            Doloremque architecto natus delectus officia culpa 
-            maxime earum laboriosam blanditiis illo necessitatibus?
-        </p>
-    </div>
-    <div class="box">
-        <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-            Dolor alias vero impedit 
-            tempore ut odit enim laborum eius nemo incidunt.
-        </p>
-    </div>
- </div>  
+     <li class="navigation">
+         <ul>About</ul>
+         <ul>Courses</ul>
+         <ul>Forum</ul>
+         <ul>Learning Path</ul>
+         <ul>Contact</ul>
+     </li>
 </body>
 </html>
