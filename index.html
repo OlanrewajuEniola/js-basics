@@ -7,55 +7,41 @@
     <title>Document</title>
     <style>
         .container{
-            display: grid;
-            grid-template: repeat(4, 100px) / repeat(3, 100px);
-            border: 3px solid lightgrey;
-            height: 100vh;
-            color: white;
-            gap: 5px;
+            display: flex;
+            flex-direction: column;
         }
-
-       .box-one{
-           background: aqua;
-           grid-column: 1 / span 2;
+       .box{
+           background: gold;
        }
 
-       .box-two{
-           background: blueviolet;
-           grid-column: 3 / 4;
-           grid-row: 1 / span 2;
+       .box:nth-of-type(2){
+           background: blue;
        }
 
-       .box-three{
-           background: burlywood;
-           grid-column: 1 / span 2;
-           grid-row: 2;
-       }
-
-       .box-four{
-           background: chartreuse;
-           grid-column: 1 / span 3;
-       }
-
-       .box-five{
-           background: crimson;
-           grid-column: 1 / span 2;
-       }
-
-       .box-six{
-           background: darkblue;
+       @media screen and (min-width: 600px){
+           .container{
+               flex-direction: row;
+           }
+           
        }
 
     </style>
 </head>
 <body>
  <div class="container">
-     <div class="box box-one">A</div>
-     <div class="box box-two">B</div>
-     <div class="box box-three">C</div>
-     <div class="box box-four">D</div>
-     <div class="box box-five">E</div>
-     <div class="box box-six">F</div>
+    <div class="box">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Doloremque architecto natus delectus officia culpa 
+            maxime earum laboriosam blanditiis illo necessitatibus?
+        </p>
+    </div>
+    <div class="box">
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Dolor alias vero impedit 
+            tempore ut odit enim laborum eius nemo incidunt.
+        </p>
+    </div>
  </div>  
 </body>
 </html>
