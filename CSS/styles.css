@@ -2,14 +2,9 @@
         font-size: 62.5%;
       }
       
-      body {
-        background: url(../images/bg-paper.jpg);
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-        background-size: 100% 50%;
-        height: 100vh; 
-        color:#000;
-      }
+     .coco{
+       width: 100%;
+     }
 
      
 
